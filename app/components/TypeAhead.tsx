@@ -29,7 +29,7 @@ export default function TypeAhead({ data }: Params) {
         name.toLowerCase().includes(searchValue.toLowerCase())
       )
     );
-  }, [searchValue]);
+  }, [searchValue, data]);
 
   function goToBoard(boardId: string) {
     router.push(`/boards/${boardId}`);

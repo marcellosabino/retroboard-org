@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./CreateBoard.module.scss";
 import Spinner from "./components/Spinner";
 import { useRouter } from "next/navigation";
@@ -14,13 +14,16 @@ export default function CreateBoard() {
   const whoAmI = useWhoAmI();
   const [isCreateDisabled, setIsCreateDisabled] = useState(true);
   const [isGeneratingBoard, setIsGeneratingBoard] = useState(false);
+  const [previousBoards, setPreviousBoards] = useState({});
+
+  useEffect(() => {
+    setPreviousBoards(
+      JSON.parse(localStorage.getItem("previous_boards") as string)
+    );
+  }, []);
 
   function handleBoardNameChange(boardName: string): void {
     setIsCreateDisabled(boardName.length <= MINIMUM_BOARD_NAME_LENGTH);
-  }
-
-  function getPreviousBoards() {
-    return JSON.parse(localStorage.getItem("previous_boards") as string);
   }
 
   async function handleSubmit(event: any): Promise<void> {
@@ -137,7 +140,7 @@ export default function CreateBoard() {
         .
       </div>
       <div className="mt-5">
-        <TypeAhead data={getPreviousBoards()} />
+        <TypeAhead data={previousBoards} />
       </div>
     </div>
   );
