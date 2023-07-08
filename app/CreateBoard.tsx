@@ -6,6 +6,7 @@ import Spinner from "./components/Spinner";
 import { useRouter } from "next/navigation";
 import { RetroBoard } from "./models";
 import useWhoAmI from "./hooks/useWhoAmI";
+import TypeAhead from "./components/TypeAhead";
 
 export default function CreateBoard() {
   const MINIMUM_BOARD_NAME_LENGTH = 3;
@@ -16,6 +17,10 @@ export default function CreateBoard() {
 
   function handleBoardNameChange(boardName: string): void {
     setIsCreateDisabled(boardName.length <= MINIMUM_BOARD_NAME_LENGTH);
+  }
+
+  function getPreviousBoards() {
+    return JSON.parse(localStorage.getItem("previous_boards") as string);
   }
 
   async function handleSubmit(event: any): Promise<void> {
@@ -130,6 +135,9 @@ export default function CreateBoard() {
           privacy policy
         </a>
         .
+      </div>
+      <div className="mt-5">
+        <TypeAhead data={getPreviousBoards()} />
       </div>
     </div>
   );
