@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import styles from "./RetroBoard.module.scss";
 import RetroColumn from "./RetroColumn";
 import BoardSettingsModal from "./modals/BoardSettingsModal";
@@ -23,6 +23,30 @@ export default function RetroBoard({ board }: Params) {
   const [isBoardSettingsOpen, setIsBoardSettingsOpen] = useState(false);
   const [isBoardPreferencesOpen, setIsBoardPreferencesOpen] = useState(false);
   const whoAmI = useWhoAmI();
+
+  useEffect(() => {
+    const previousBoards = localStorage.getItem("previous_boards");
+    const currentBoard = {
+      id: board.id,
+      name: board.displayName,
+      createdAt: board.createdAt.toString(),
+    };
+
+    if (previousBoards === null) {
+      localStorage.setItem(
+        "previous_boards",
+        JSON.stringify({ [currentBoard.id]: currentBoard })
+      );
+    } else {
+      localStorage.setItem(
+        "previous_boards",
+        JSON.stringify({
+          ...(JSON.parse(previousBoards) as any),
+          [currentBoard.id]: currentBoard,
+        })
+      );
+    }
+  }, [board]);
 
   async function updateBoard(board: any): Promise<void> {
     await fetch(`${process.env.NEXT_PUBLIC_API_URL}/boards/${board.id}`, {
