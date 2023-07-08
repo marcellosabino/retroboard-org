@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733335"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="monochrome_logo.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   inkscape:export-filename="/Users/marcello/Documents/GitHub/retroboard.org/src/favicon.ico"
+   inkscape:export-xdpi="12.563037"
+   inkscape:export-ydpi="12.563037"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="256px"
+     inkscape:zoom="0.71000955"
+     inkscape:cx="197.88466"
+     inkscape:cy="236.61654"
+     inkscape:window-width="1422"
+     inkscape:window-height="762"
+     inkscape:window-x="248"
+     inkscape:window-y="371"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path5579"
+       style="fill:#111827;fill-opacity:1;stroke-width:0.607233;stroke-linecap:round"
+       d="M 12.626217,9.6446127 C 5.0798188,14.243161 2.7016671,38.47484 8.9514253,49.299739 16.794258,62.883923 34.164273,67.538206 47.748458,59.695373 61.332642,51.85254 66.04834,20.761368 58.144092,20.898341 c -1.485876,0.02574 -3.013378,0.244373 -4.550939,0.569746 -0.314,6.174201 -2.103575,11.534073 -7.984374,14.651418 -4.492675,2.381525 -9.526025,2.713677 -14.029582,1.325907 C 27.086803,36.06108 23.121498,32.965415 20.745884,28.483878 17.827801,22.978982 17.987512,16.662578 20.617321,11.503436 20.2071,11.169747 19.786882,10.836531 19.34706,10.502706 16.809144,8.576429 14.549809,8.4724335 12.626217,9.6446127 Z" />
+    <path
+       id="circle5991-1"
+       style="fill:#111827;fill-opacity:1;stroke-width:0.296209;stroke-linecap:round"
+       d="M 24.828751,25.027545 C 21.245145,18.26716 23.820434,9.8817007 30.58082,6.2980954 c 4.216846,-2.2352972 0.564608,13.6601626 12.98762,0.00387 1.801467,-1.9803058 5.164543,-1.6952653 5.741828,5.7481946 0.591642,7.628561 1.008317,15.145842 -5.752068,18.729448 -3.384388,1.794025 -7.176049,2.044504 -10.568631,0.999081 -3.384173,-1.042833 -6.371239,-3.375151 -8.160818,-6.751149 z"
+       sodipodi:nodetypes="sssssss" />
+  </g>
+</svg>

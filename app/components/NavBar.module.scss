@@ -1,0 +1,29 @@
+.navbar {
+  @apply sticky top-0 w-full py-2 border-b border-gray-200 mb-3 bg-white z-20;
+
+  .nav_container {
+    @apply w-full flex items-center justify-between;
+  }
+
+  .icon_link {
+    @apply rounded-full text-3xl p-1 px-2 hover:bg-gray-100;
+  }
+
+  a.brand {
+    @apply inline-block py-1 px-2 rounded-lg -ml-3 hover:bg-gray-100;
+  }
+
+  a.brand span {
+    @apply flex items-center gap-2 text-2xl font-extrabold text-gray-900;
+
+    &::before {
+      display: block;
+      content: "";
+      background-image: url("/images/monochrome_logo.svg");
+      background-repeat: no-repeat;
+      background-size: 1.75rem 1.75rem;
+      height: 1.75rem;
+      width: 1.75rem;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.create_board {
+  @apply flex flex-col gap-3 w-full md:max-w-2xl mx-auto p-8 bg-white;
+  @apply border border-gray-200 rounded-lg;
+
+  h1 {
+    @apply text-center text-2xl md:text-3xl font-extrabold;
+  }
+
+  span {
+    @apply text-center -mt-2.5 text-gray-700;
+  }
+
+  form {
+    @apply flex;
+
+    input {
+      @apply w-full border border-gray-200 rounded-l-lg rounded-r-none py-2 px-3;
+    }
+
+    button {
+      @apply px-3 py-2 rounded-r-lg rounded-l-none shrink-0 font-bold border border-l-0;
+      @apply bg-gray-900 text-white hover:bg-gray-800 focus:bg-gray-800 border-gray-900;
+
+      span {
+        @apply text-white;
+      }
+
+      &:disabled {
+        @apply bg-gray-100 cursor-not-allowed border border-gray-200 border-l-0 text-gray-900;
+
+        span {
+          @apply text-gray-900;
+        }
+      }
+    }
+  }
+
+  .terms_of_service {
+    @apply text-xs text-center;
+
+    a {
+      @apply text-brand hover:underline hover:text-brand-hover active:text-brand-press;
+    }
+  }
+}

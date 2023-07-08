@@ -1,0 +1,27 @@
+.card {
+  @apply flex flex-col gap-2 py-2 px-2.5 rounded-lg;
+}
+
+.comments {
+  @apply text-sm text-gray-700;
+
+  li {
+    @apply border-l-4 border-black/20 pl-2 mb-1;
+  }
+}
+
+.footer {
+  @apply flex items-center justify-between text-sm;
+
+  .button_group {
+    @apply flex py-1.5 px-2 rounded-lg bg-white/30 items-center gap-3;
+
+    button {
+      @apply flex gap-1 items-center;
+
+      i {
+        @apply hover:scale-125 duration-500 transition-transform;
+      }
+    }
+  }
+}

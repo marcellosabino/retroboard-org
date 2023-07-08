@@ -1,0 +1,19 @@
+.board_container {
+  @apply flex flex-col h-full gap-3;
+
+  .header {
+    @apply flex gap-4 items-center justify-between;
+
+    h1 {
+      @apply font-extrabold text-xl md:text-2xl max-w-full overflow-hidden whitespace-nowrap text-ellipsis;
+    }
+
+    .action_buttons {
+      @apply flex gap-1 shrink-0;
+    }
+  }
+}
+
+.board {
+  @apply h-0 flex gap-3 grow overflow-x-auto;
+}

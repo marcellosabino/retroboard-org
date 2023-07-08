@@ -1,0 +1,31 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a,
+  button,
+  input[type="text"] {
+    @apply transition-colors duration-500 ease-in-out;
+  }
+
+  input[type="text"],
+  textarea {
+    @apply outline-0 outline-none border focus:border-gray-900;
+  }
+
+  textarea {
+    @apply w-full border-gray-200 rounded-lg border p-3 max-h-[15rem] min-h-[10rem];
+  }
+}
+
+html,
+body {
+  @apply flex flex-col h-full text-gray-900 bg-gray-50;
+}
+
+footer {
+  @apply mt-auto shrink-0;
+}

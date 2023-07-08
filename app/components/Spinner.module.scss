@@ -1,0 +1,19 @@
+.spinner {
+  @apply flex gap-2 items-center;
+
+  svg {
+    @apply animate-spin h-5 w-5;
+
+    circle {
+      @apply opacity-25;
+    }
+
+    path {
+      @apply opacity-75;
+    }
+  }
+}
+
+.loading_text {
+  @apply hidden md:inline-block;
+}

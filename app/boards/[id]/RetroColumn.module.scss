@@ -1,0 +1,30 @@
+.column {
+  @apply flex flex-col grow rounded-lg border border-gray-200 min-w-[19rem];
+
+  .header {
+    @apply flex justify-between items-center px-3 py-2 border-b border-gray-200;
+    @apply gap-2 bg-white rounded-t-lg shrink-0;
+
+    h2 {
+      @apply font-extrabold text-base overflow-hidden text-ellipsis whitespace-nowrap;
+    }
+
+    .action_buttons {
+      @apply flex items-center gap-2 text-sm shrink-0;
+
+      button {
+        @apply text-brand hover:underline;
+      }
+    }
+  }
+
+  .content {
+    @apply flex flex-col gap-3 grow p-3 bg-white overflow-auto;
+  }
+
+  .footer {
+    @apply flex justify-between items-center shrink-0 mt-auto border-t;
+    @apply px-3 py-1 text-sm bg-gray-50 rounded-b-lg;
+    @apply text-gray-500 border-gray-200;
+  }
+}

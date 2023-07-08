@@ -1,0 +1,42 @@
+{
+  "name": "retroboard-org",
+  "description": "Your free and easy to use Retroboard. No account necessary.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Marcello Sabino",
+    "email": "hey@marcello.codes",
+    "url": "https://marcello.codes"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/marcellosabino/retroboard-org"
+  },
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.3.2",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "10.4.14",
+    "bootstrap-icons": "^1.10.5",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "next": "13.4.7",
+    "postcss": "8.4.24",
+    "random": "^4.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.63.6",
+    "swr": "^2.2.0",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.3"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.12"
+  }
+}

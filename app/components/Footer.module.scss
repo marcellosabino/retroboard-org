@@ -1,0 +1,13 @@
+.footer {
+  @apply bg-gray-100 w-full border-t border-gray-300 text-gray-600 py-2 text-sm;
+}
+
+.rhs {
+  ul {
+    @apply flex gap-5;
+
+    a {
+      @apply text-gray-600 hover:text-brand hover:underline;
+    }
+  }
+}

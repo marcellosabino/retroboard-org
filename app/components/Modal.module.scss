@@ -1,0 +1,42 @@
+.backdrop {
+  @apply flex flex-col items-center fixed z-30 top-0 left-0;
+  @apply w-full h-screen bg-black/20 backdrop-blur-sm p-7;
+}
+
+.modal {
+  @apply flex flex-col w-full md:max-w-3xl bg-white rounded-lg shadow-md max-h-[calc(100vh-3.5rem)];
+}
+
+.header {
+  @apply flex items-center justify-between px-5 pt-5;
+
+  h1 {
+    @apply text-xl font-extrabold;
+  }
+
+  button {
+    @apply py-2 px-3 rounded-full text-xl text-gray-500;
+    @apply hover:text-gray-700 hover:bg-gray-100;
+  }
+}
+
+.body {
+  @apply overflow-y-auto px-5 pb-5 pt-3;
+}
+
+.footer {
+  @apply flex gap-3 bg-gray-100 border-t border-gray-200 p-5 rounded-b-lg;
+
+  button {
+    @apply text-base py-1 px-2.5;
+  }
+
+  button.primary {
+    @apply bg-brand text-white rounded-lg border-black/30 border;
+    @apply hover:bg-brand-hover active:bg-brand-press font-semibold;
+  }
+
+  button.link {
+    @apply underline text-brand hover:text-brand-hover active:text-brand-press;
+  }
+}

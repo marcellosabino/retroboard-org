@@ -1,0 +1,36 @@
+label.toggler {
+  @apply relative inline-block h-8 w-14;
+
+  input {
+    @apply w-0 h-0 opacity-0;
+  }
+
+  span {
+    @apply absolute bg-gray-300 duration-500 top-0 left-0 bottom-0 right-0 hover:cursor-pointer rounded-2xl;
+
+    &:before {
+      content: "";
+      @apply absolute bg-white duration-500 h-6 w-6 left-1.5 bottom-1 rounded-[50%];
+    }
+  }
+
+  input:checked + span {
+    @apply bg-brand;
+
+    &:before {
+      @apply translate-x-5;
+    }
+  }
+
+  input:focus + span {
+    @apply shadow-brand;
+  }
+
+  input + span > i {
+    @apply opacity-0;
+  }
+
+  input:checked + span > i {
+    @apply absolute inline right-2.5 top-1 text-brand opacity-100 duration-500;
+  }
+}
