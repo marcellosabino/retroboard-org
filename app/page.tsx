@@ -1,6 +1,6 @@
 import CreateBoard from "./CreateBoard";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
+import Footer from "./components/Footer/Footer";
+import NavBar from "./components/NavBar/NavBar";
 
 export default function Home() {
   return (

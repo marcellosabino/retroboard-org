@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 import styles from "./CreateBoard.module.scss";
-import Spinner from "./components/Spinner";
 import { useRouter } from "next/navigation";
 import { RetroBoard } from "./models";
 import useWhoAmI from "./hooks/useWhoAmI";
-import TypeAhead from "./components/TypeAhead";
+import TypeAhead from "./components/TypeAhead/TypeAhead";
+import Spinner from "./components/Spinner/Spinner";
 
 export default function CreateBoard() {
   const MINIMUM_BOARD_NAME_LENGTH = 3;

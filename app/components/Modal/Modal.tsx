@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import styles from "./Modal.module.scss";
-import useEscapeKey from "../hooks/useEscapeKey";
-import useOutsideClick from "../hooks/useOutsideClick";
+import useEscapeKey from "@/app/hooks/useEscapeKey";
+import useOutsideClick from "@/app/hooks/useOutsideClick";
 
 type Params = {
   isOpen: boolean;
