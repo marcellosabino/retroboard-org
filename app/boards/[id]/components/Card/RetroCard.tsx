@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import styles from "./RetroCard.module.scss";
-import UpdateCardModal from "./modals/UpdateCardModal";
-import AddCommentModal from "./modals/AddCommentModal";
-import { WhoAmIContext } from "./contexts/WhoAmIContext";
-import { useReadonly } from "./contexts/ReadonlyContext";
-import { useAdmin } from "./contexts/AdminContext";
+import { WhoAmIContext } from "../../contexts/WhoAmIContext";
+import { useAdmin } from "../../contexts/AdminContext";
+import { useReadonly } from "../../contexts/ReadonlyContext";
+import AddCommentModal from "../../modals/AddCommentModal";
+import UpdateCardModal from "../../modals/UpdateCardModal";
 
 type Params = {
   card: any;

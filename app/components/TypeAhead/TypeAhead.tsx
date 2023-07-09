@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import useEscapeKey from "../hooks/useEscapeKey";
-import useOutsideClick from "../hooks/useOutsideClick";
+import useEscapeKey from "../../hooks/useEscapeKey";
+import useOutsideClick from "../../hooks/useOutsideClick";
 import { useRouter } from "next/navigation";
 
 type Params = {

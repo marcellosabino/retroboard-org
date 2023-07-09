@@ -1,8 +1,8 @@
 import useWhoAmI from "@/app/hooks/useWhoAmI";
-import { WhoAmIContext } from "./contexts/WhoAmIContext";
-import { SortByProvider } from "./contexts/SortByContext";
-import { ReadonlyProvider } from "./contexts/ReadonlyContext";
-import { AdminProvider } from "./contexts/AdminContext";
+import { WhoAmIContext } from "./WhoAmIContext";
+import { SortByProvider } from "./SortByContext";
+import { ReadonlyProvider } from "./ReadonlyContext";
+import { AdminProvider } from "./AdminContext";
 
 export default function BoardProviders({ children, isBoardOwner }: any) {
   const whoAmI = useWhoAmI();

@@ -1,4 +1,4 @@
-import Modal from "@/app/components/Modal";
+import Modal from "@/app/components/Modal/Modal";
 import useWhoAmI from "@/app/hooks/useWhoAmI";
 import { useState } from "react";
 

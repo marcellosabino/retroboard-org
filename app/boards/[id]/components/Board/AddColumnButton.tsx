@@ -1,5 +1,5 @@
+import { useAdmin } from "../../contexts/AdminContext";
 import styles from "./AddColumnButton.module.scss";
-import { useAdmin } from "./contexts/AdminContext";
 
 export default function AddColumnButton({ board }: any) {
   const isAdmin = useAdmin();

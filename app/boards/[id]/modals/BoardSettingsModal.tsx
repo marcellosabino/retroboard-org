@@ -1,5 +1,4 @@
-import ColorPicker from "@/app/components/ColorPicker";
-import Modal from "@/app/components/Modal";
+import Modal from "@/app/components/Modal/Modal";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 

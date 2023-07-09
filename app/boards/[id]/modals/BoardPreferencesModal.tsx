@@ -1,9 +1,9 @@
-import Modal from "@/app/components/Modal";
-import Toggler from "@/app/components/Toggler";
 import { useSortBy, useSortByDispatch } from "../contexts/SortByContext";
 import { useReadonly, useReadonlyDispatch } from "../contexts/ReadonlyContext";
 import { useAdmin, useAdminDispatch } from "../contexts/AdminContext";
 import useWhoAmI from "@/app/hooks/useWhoAmI";
+import Modal from "@/app/components/Modal/Modal";
+import Toggler from "@/app/components/Toggler/Toggler";
 
 type Params = {
   isOpen: boolean;

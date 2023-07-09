@@ -1,10 +1,10 @@
+import { useState, useMemo } from "react";
+import { useAdmin } from "../../contexts/AdminContext";
+import { useSortBy } from "../../contexts/SortByContext";
+import AddCardModal from "../../modals/AddCardModal";
+import ColumnSettingsModal from "../../modals/ColumnSettingsModal";
+import RetroCard from "../Card/RetroCard";
 import styles from "./RetroColumn.module.scss";
-import RetroCard from "./RetroCard";
-import AddCardModal from "./modals/AddCardModal";
-import { useMemo, useState } from "react";
-import ColumnSettingsModal from "./modals/ColumnSettingsModal";
-import { useSortBy } from "./contexts/SortByContext";
-import { useAdmin } from "./contexts/AdminContext";
 
 type Params = {
   column: any;

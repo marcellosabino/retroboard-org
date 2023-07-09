@@ -1,5 +1,5 @@
-import ColorPicker from "@/app/components/ColorPicker";
-import Modal from "@/app/components/Modal";
+import ColorPicker from "@/app/components/ColorPicker/ColorPicker";
+import Modal from "@/app/components/Modal/Modal";
 import { useState } from "react";
 
 type Params = {

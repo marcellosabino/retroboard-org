@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import styles from "./RetroBoard.module.scss";
-import RetroColumn from "./RetroColumn";
-import BoardSettingsModal from "./modals/BoardSettingsModal";
-import BoardPreferencesModal from "./modals/BoardPreferencesModal";
-import BoardProviders from "./BoardProviders";
 import useWhoAmI from "@/app/hooks/useWhoAmI";
 import AddColumnButton from "./AddColumnButton";
+import BoardProviders from "../../contexts/BoardProviders";
+import BoardPreferencesModal from "../../modals/BoardPreferencesModal";
+import BoardSettingsModal from "../../modals/BoardSettingsModal";
+import RetroColumn from "../Column/RetroColumn";
 
 type Params = {
   board: any;

@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import useBoard from "./useBoard";
+import useBoard from "./components/Board/useBoard";
 import { mutate } from "swr";
-import RetroBoard from "./RetroBoard";
+import RetroBoard from "./components/Board/RetroBoard";
 
 type Params = {
   params: {
